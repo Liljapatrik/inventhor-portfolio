@@ -1,0 +1,44 @@
+/**
+ * @Author Tatiana Fløisbonn
+ *
+ * Provides layout and button styling for the WarehouseInfo component.
+ * Handles overall container layout
+ * Styles action buttons (edit/delete) with hover effects
+ * Icon colors match the design system and user interaction
+ */
+
+/* Main container for the warehouse info page */
+.warehouse-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* Buttons inherit the logo color */
+button i {
+    color: var(--logo-icon-color);
+  }
+
+/* Style for edit and delete buttons */
+button.delete-btn, button.edit-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+/*Hover-effect on delete-button*/
+button.delete-btn:hover {
+    color: red; 
+  }
+  
+  /* Hover-effect on edti-button */
+button.edit-btn:hover {
+    color: #F5BE05;
+  }
+  
+  /*Change the icon color on hover*/
+button.delete-btn:hover i, button.edit-btn:hover i {
+    color: inherit; /*Inherit the color from the button*/
+  }

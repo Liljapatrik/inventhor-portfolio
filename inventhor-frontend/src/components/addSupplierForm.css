@@ -1,0 +1,10 @@
+/*
+ * CSS for Supplier Form
+ * Sets the text color to white for all input and textarea elements inside .formField containers.
+ *
+ * @Author Patrik Lilja
+ */
+.formField input,
+.formField textarea {
+    color: white;
+}

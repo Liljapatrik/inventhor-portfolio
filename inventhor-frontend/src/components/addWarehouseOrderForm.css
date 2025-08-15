@@ -1,0 +1,19 @@
+/* 
+ * Styles for product input fields container and inputs.
+ * 
+ * .productFields: Uses flexbox to layout child elements in a row with a gap of 1rem
+ *                 and a bottom margin of 10px for spacing between rows.
+ * .productInput: Makes the input field grow to fill available space with padding for better UX.
+ *
+ * Author: Patrik Lilja
+ */
+.productFields {
+  display: flex;
+  gap: 1rem; 
+  margin-bottom: 10px;
+}
+
+.productInput {
+  flex: 1;
+  padding: 6px;
+}
