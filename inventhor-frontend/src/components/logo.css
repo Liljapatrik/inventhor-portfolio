@@ -1,0 +1,45 @@
+/*
+Author: Furo Muktar Eshetu
+Date: 1 February 2025
+Description: CSS for the logo component, including styles for the logo icon and text.
+*/
+
+/*----------------------------------------
+    Logo style
+------------------------------------------*/
+
+.logo {
+    line-height: 1;
+}
+
+
+@media  (max-width: 1024px) {
+    .logo .logo-icon {
+        font-size: 2rem;
+        color: var(--highlight-color);
+        
+    }
+
+    .logo .logo-text {
+        display: none;
+      
+        
+    }
+}
+
+.logo-icon {
+    font-size: 2.7rem;
+    margin-right: 1rem;
+    color: var(--basic-color);
+   
+   
+}
+
+.logo-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--highlight-color);
+    
+    
+}
+

@@ -1,0 +1,49 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 12 February 2025
+Description: CSS for the customer order details component.
+*/
+
+.order-details-container h1, h4, h5 {
+  font-weight: bold;
+}
+
+.timeline-container {
+  padding: 2rem 0rem
+}
+
+.active-connector + .p-timeline-event-connector {
+  background-color: var(--highlight-color);
+}
+
+.inactive-connector + .p-timeline-event-connector {
+  background-color: var(--stroke-color);
+}
+
+.order-delivery pi {
+  font-size: 6rem;
+}
+
+.order-delivery h6 {
+  padding-top: 1rem;
+}
+
+
+.order-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+
+.order-details-table td {
+  border: none;
+}
+
+.order-details-table span {
+  font-size: 4rem;
+}
+
+.order-details-totalPrice {
+    text-align: right;
+}

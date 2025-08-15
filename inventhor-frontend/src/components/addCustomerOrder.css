@@ -1,0 +1,138 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 9 June 2025
+Description: CSS for AddCustomerOrder component
+*/
+
+.add-customer-order {
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.order-product-block {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    background: var(--dropdown-bg-color); /* Background color for the product block. Color defines in App.css */
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+}
+
+.order-product-block label {
+    font-size: 1.1rem;
+    color: var(--basic-color);
+    margin-bottom: 0.3rem;
+}
+
+.order-product-block select,
+.order-product-block input[type="number"] {
+    background: var(--background-color);
+    color: var(--basic-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    min-width: 10rem;
+}
+
+.order-product-block input[type="number"] {
+    width: 6rem;
+}
+
+.order-product-block option {
+    color: var(--basic-color);
+}
+
+.order-product-block span {
+    font-size: 0.95rem;
+}
+
+.order-product-block .not-enough {
+    color: red;
+    font-weight: 500;
+}
+
+.add-customer-order button[type="button"] {
+    background: var(--highlight-color);
+    color: var(--basic-color);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.add-customer-order button[type="submit"] {
+    background: var(--highlight-color);
+    color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end; /* Aligns the submit button to the right */
+    margin-top: 1rem;
+}
+
+.customer-info-block {
+    background: var(--dropdown-bg-color);
+    border-radius: 0.7rem;
+    padding: 1.2rem 1.5rem;
+}
+
+.customer-info-block h3,
+.payment-block h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--basic-color);
+}
+
+.customer-info-block input {
+    background: var(--background-color);
+    color: var(--basic-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    min-width: 12rem;
+}
+
+.payment-block {
+    background: var(--dropdown-bg-color);
+    border-radius: 0.7rem;
+    padding: 1.2rem 1.5rem;
+}
+
+.payment-block select,
+.payment-block input[type="date"] {
+    background: var(--background-color);
+    color: var(--basic-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    min-width: 12rem;
+}
+
+@media (max-width: 900px) {
+    .add-customer-order {
+        padding: 1rem;
+    }
+    .order-product-block,
+    .customer-info-block,
+    .payment-block {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .customer-info-block input {
+        min-width: 100%;
+    }
+}

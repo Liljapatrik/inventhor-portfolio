@@ -1,0 +1,54 @@
+/*
+ * Css for warehouseOrders
+ * 
+ * @Author Patrik Lilja
+ */
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: var(--modal-background, #fff);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  color: var(--text-color, #000);
+}
+
+/* Container for buttons aligned to right */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Match Add Supplier button */
+.modal-btn {
+  background-color: #F5BE05;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal-btn:hover {
+  background-color: #e0ad00;
+}

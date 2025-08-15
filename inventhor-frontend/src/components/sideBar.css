@@ -1,0 +1,68 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 1 February 2025
+
+/*------------------------------------------
+    Sidebar style
+------------------------------------------*/
+
+.sidebar {
+    position: fixed;
+    top: 4.5rem;
+    width: 15rem;
+    height: calc(100vh - 4.5rem);
+    background-color: var(--navbar-background-color);
+    border-right: 0.1rem solid var(--stroke-color);                                  
+    z-index: 997;
+    visibility: visible;
+}
+
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    list-style: none;
+    align-items: center;
+}
+
+.sidebar-nav .sidebar-nav-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 2rem;
+    color: var(--basic-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sidebar-nav .sidebar-nav-item:hover {
+    background-color: var(--highlight-color);
+}
+
+.sidebar-nav .sidebar-nav-link i {
+    margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .toggle-sidebar .sidebar {
+        visibility: hidden;
+    }
+}
+
+.sidebar-nav-subitem {
+  padding-left: 3.5rem;
+  background: none;
+}
+
+.sidebar-nav-link-sub {
+  font-size: 0.95rem;
+  color: var(--basic-color, #bbb);
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-nav-link-sub:hover {
+  background: var(--highlight-color, #222);
+}
