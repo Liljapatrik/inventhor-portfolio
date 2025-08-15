@@ -1,0 +1,193 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 1 February 2025
+Description: CSS for the header navigation component.
+*/
+
+/*---------------------------------------------
+    Header navigation style
+---------------------------------------------*/
+.header-nav {
+    margin-right: 4rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Theme mode styling*/
+#theme-switch {
+    font-size: 1.4rem;
+    padding: 0 2rem 0 0;
+    border: none;
+    background-color: var(--navbar-background-color);
+    color: var(--basic-color);
+    
+}
+
+#theme-switch i:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch i:first-child {
+    display: none;
+    
+}
+
+.darkmode #theme-switch i:last-child {
+    display: block;
+
+}
+
+
+/*Notifications style*/
+
+.header-nav .notifications {
+    background-color: var(--dropdown-bg-color);
+}
+
+.header-nav .dropdown-header, .header-nav .dropdown-footer {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--basic-color);
+    padding: 1rem;
+}
+
+.header-nav .notice-item {
+    font-size: 1.4rem;
+    padding: 0 4rem 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-nav .notifications .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-nav .notifications .notification-item i {
+    font-size: 1.3rem;
+    padding: 0rem 0.7rem;
+}
+
+.header-nav .notifications .notification-item h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.2rem 0.2rem 0.4rem 0;
+    color: var(--basic-color);
+    
+}
+
+.header-nav .notifications .notification-item p {
+    font-size: 0.7rem;
+    margin: 0.2rem 0.2rem 0.3rem 0;
+    color: var(--basic-color);
+}
+
+.header-nav .notifications .notification-item:hover {
+    background-color: var(--select-item-color);
+}
+.header-nav .notifications .dropdown-footer {
+    text-align: center;
+}
+
+.header-nav .notifications .dropdown-footer a {
+    font-size: 0.8rem;
+    font-weight: bold;   
+    color: var(--basic-color);
+}
+
+/*User profile style*/
+
+.header-nav .profile {
+    padding: 0;
+    background-color: var(--dropdown-bg-color);
+}
+
+.header-nav .nav-profile span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.header-nav .nav-profile i {
+    font-size: 2.7rem;
+    margin-right: 1rem;
+
+}
+
+.header-nav .profile .dropdown-header h4{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    color: var(--highlight-color);
+}
+
+.header-nav .profile .dropdown-header span {
+    font-size: 0.8rem;  
+    color: var(--basic-color);
+}
+
+.header-nav .profile .dropdown-item i {
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+    color: var(--basic-color);
+}
+
+.header-nav .profile .dropdown-item span {
+    font-size: 0.9rem;
+    color: var(--basic-color);
+}
+
+.header-nav .profile .dropdown-item:hover {
+    background-color: var(--select-item-color);
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+
+    .header-nav {
+        margin-right: 1rem;
+    }
+
+    .header-nav .nav-profile span {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--highlight-color);
+    
+    }
+    
+    .header .header-nav .nav-profile i {
+        font-size: 2rem;
+    }
+    
+    .header-nav .notice-item {
+        font-size: 1.2rem;
+        padding: 0 2rem 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #theme-switch {
+        font-size: 1.2rem;
+        padding: 0 1rem 0 0;
+        border: none;
+        background-color: var(--navbar-background-color);
+        color: var(--basic-color);
+        
+    }
+
+    .header-nav .nav-profile span {
+        display: none;
+    }
+
+
+}

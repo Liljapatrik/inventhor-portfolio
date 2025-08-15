@@ -1,0 +1,32 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 27 April 2025
+Description: CSS styles for the employee details component.
+*/
+
+.employee-details-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.employee-details-header img {
+    width: 7rem;
+    background-color: #ffffff;
+    border-radius: 5rem;
+}
+
+.employee-details-info-item {
+    margin-bottom: 1.8rem;
+}
+
+@media (max-width: 1024px) {
+    .employee-details-header img {
+        width: 5rem;
+    }
+
+    .employee-details-info-item {
+        margin-bottom: 1rem;
+    }
+    
+}

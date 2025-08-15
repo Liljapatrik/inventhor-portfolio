@@ -1,0 +1,48 @@
+/*
+Author: Furo Muktar Eshetu
+Date 2 June 2025
+Description: CSS for the notifications component.
+*/
+
+.table-container {
+  margin-top: 1rem;
+}
+
+.t-notification-row {
+  cursor: pointer;
+  transition: background 0.2s; /* Smooth background transition */
+}
+
+.t-notification-row.unread {
+  background-color: var(--unread-color);
+}
+
+.t-notification-row.unread td:first-child {
+    background-color: var(--unread-color);
+}
+
+.t-notification-row.read {
+  background-color: var(--background-color);
+}
+
+.notification-popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.notification-popup {
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 30vw;
+  max-width: 90vw;
+}
+
+.notification-popup button {
+  margin-top: 1rem;
+}

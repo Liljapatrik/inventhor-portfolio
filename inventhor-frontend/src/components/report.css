@@ -1,0 +1,44 @@
+/**
+ * @Author Steewen Dennis Chanavi Holden
+ *
+ * Provides layout and appearance styles displayed in the report view.
+ *
+ * Arranges product columns horizontally and centers their content.
+ * Styles product images and headings.
+ */
+
+
+/* Container for the row of popular products */
+.popular-products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+/* Each product column is centered vertically and horizontally */
+.popular-product-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for product images/icons in the columns */
+.popular-product-picture {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Bold and spaced headings for each product section */
+h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Reduce bottom margin for smaller screens */
+@media screen and (max-width: 1020px) {
+    .popular-products-container {
+        margin-bottom: 2rem;
+    }
+    
+}

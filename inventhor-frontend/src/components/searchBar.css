@@ -1,0 +1,66 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 1 February 2025
+ */
+
+/*------------------------------------------
+    Search Bar style
+------------------------------------------*/
+
+.header .search-bar {
+    margin-left: 10rem;
+    background-color: var(--navbar-color);
+    border-bottom: 0.1rem solid var(--stroke-color);
+    
+    
+}
+
+
+@media (max-width: 1024px) {
+    .header .search-bar {
+        margin-left: 7rem;
+        position: fixed;
+        z-index: 997;
+        visibility: hidden;
+        opacity: 0;
+
+    }
+    /*missing code in jsx file!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    /*.header .search-bar-show {
+        visibility: visible;
+        opacity: 1;
+    }
+    */
+}
+
+.header .search-form {
+    width: 100%;
+}
+
+.header .search-form input {
+    font-size: 1.2rem;
+    color: var(--stroke-color);
+    width: 100%;
+    padding: 0.1rem;
+    border: none;
+    background-color: var(--navbar-color);
+}
+
+.header .search-form input:focus, .header .search-form input:hover {
+    outline: none; 
+    color: var(--basic-color);
+    
+}
+
+.header .search-form button {
+    border: none;
+    padding: 0;
+    padding-right: 1rem;
+    background: none; 
+}
+
+.header .search-icon {
+    color: var(--stroke-color);
+    padding-left: 1rem;
+}
