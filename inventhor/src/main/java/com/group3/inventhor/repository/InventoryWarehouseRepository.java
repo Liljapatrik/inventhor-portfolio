@@ -1,12 +1,8 @@
 package com.group3.inventhor.repository;
 
 import com.group3.inventhor.model.InventoryWarehouseId;
-import com.group3.inventhor.model.Product;
-import com.group3.inventhor.model.WarehouseOrderProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.group3.inventhor.model.InventoryWarehouse;
-
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

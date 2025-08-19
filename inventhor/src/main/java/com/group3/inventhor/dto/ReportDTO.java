@@ -18,20 +18,20 @@ import java.util.Map;
 @AllArgsConstructor
 public class ReportDTO {
 
-    // Sales statistics
+
     private BigDecimal totalSalesCurrentYear;
     private BigDecimal totalSalesPreviousYear;
 
-    // Customer statistics
+
     private Integer totalCustomersCurrentYear;
     private Integer totalCustomersPreviousYear;
 
-    // Popular products
+
     private Map<String, Object> weeklyPopularProduct;
     private Map<String, Object> monthlyPopularProduct;
     private Map<String, Object> yearlyPopularProduct;
 
-    // Chart data
+
     private List<Map<String, Object>> monthlySalesData;
     private List<Map<String, Object>> monthlyCustomerData;
 }

@@ -1,8 +1,5 @@
 package com.group3.inventhor.dto;
 
-
-import com.group3.inventhor.model.EmployeeRole;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,6 +16,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EmployeeRoleDTO {
     private Integer rolenr;
-    private String name; // Name of the role (e.g., "Admin", "Staff")
+    private String name;
 
 }
