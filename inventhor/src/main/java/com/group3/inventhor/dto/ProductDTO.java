@@ -28,5 +28,5 @@ public class ProductDTO {
     private BigDecimal weight;
     private BigDecimal sellprice;
     private String unit;
-    private Integer quantity; // Summary quantity of the product across all locations in all warehouses
+    private Integer quantity;
 }

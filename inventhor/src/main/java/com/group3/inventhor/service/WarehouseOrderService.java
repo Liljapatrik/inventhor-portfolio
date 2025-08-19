@@ -93,7 +93,7 @@ public class WarehouseOrderService {
         if (employee.getRole() == null || employee.getRole().getRolenr() != 1) {
             throw new SecurityException("You are not authorized to delete suppliers");
         }
-        // GET enitys
+
         Warehouse warehouse = warehouseRepository.findById(dto.getWarehousenr())
                 .orElseThrow(() -> new EntityNotFoundException("Warehouse not found " + dto.getWarehousenr()));
 
@@ -103,7 +103,7 @@ public class WarehouseOrderService {
         OrderStatus orderStatus = orderStatusRepository.findByNameIgnoreCase("ordered")
                 .orElseThrow(() -> new EntityNotFoundException("Status 'ordered' not found"));
 
-        // Check is product is linked to supplier
+
         for (WarehouseOrderCreateDTO.ProductLine productLine : dto.getProducts()) {
             boolean isLinked = productSupplierRepository.existsByProduct_ProductnrAndSupplier_Suppliernr(productLine.getProductnr(), supplier.getSuppliernr());
             if (!isLinked) {
@@ -116,19 +116,19 @@ public class WarehouseOrderService {
         warehouseOrder.setSupplier(supplier);
         warehouseOrder.setStatus(orderStatus);
         warehouseOrder.setOrderdate(LocalDateTime.now());
-        // Allow deliverydate to be null
+
         if (dto.getDeliverydate() != null) {
             warehouseOrder.setDeliverydate(dto.getDeliverydate());
         }
         WarehouseOrder savedOrder = warehouseOrderRepository.save(warehouseOrder);
 
-        // Handle every product in an order
+
         for (WarehouseOrderCreateDTO.ProductLine productLine : dto.getProducts()) {
-            // Get product
+
             Product product = productRepository.findById(productLine.getProductnr())
                     .orElseThrow(() -> new EntityNotFoundException("Product not found"));
 
-            // Create WarehouseOrderProduct and set composite key (id)
+
             WarehouseOrderProduct orderProduct = new WarehouseOrderProduct();
 
             WarehouseOrderProductId id = new WarehouseOrderProductId();
@@ -143,7 +143,7 @@ public class WarehouseOrderService {
 
             warehouseOrderProductRepository.save(orderProduct);
         }
-        // Return DTO
+
         return warehouseOrderMapper.toDTO(savedOrder);
     }
 
@@ -179,7 +179,7 @@ public class WarehouseOrderService {
             throw new IllegalArgumentException("Order cannot be modified in its current status");
         }
 
-        // Update status and deleiverydate
+
         if (dto.getStatusnr() != null) {
             OrderStatus newStatus = orderStatusRepository.findById(dto.getStatusnr())
                     .orElseThrow(() -> new EntityNotFoundException("Status not found"));

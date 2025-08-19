@@ -32,7 +32,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PaymentMethodController {
 
-    // The PaymentMethodService instance used to handle payment method-related operations
+
     private final PaymentMethodService paymentMethodService;
 
     /**

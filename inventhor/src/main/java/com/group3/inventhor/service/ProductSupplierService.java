@@ -86,19 +86,19 @@ public class ProductSupplierService {
      * @return list of ProductSupplierDTOs containing supplier information for the specified product.
      */
     public List<ProductSupplierGetSuppliersDTO> getSuppliersByProduct(Integer productnr) {
-        // Check if product exists
+
         List<ProductSupplier> productSuppliers = productSupplierRepository.findByProduct_Productnr(productnr);
-        // If no suppliers found, throw an exception
+
         if (productSuppliers.isEmpty()) {
             throw new EntityNotFoundException("No suppliers found for the given product");
         }
-        // Map ProductSupplier entities to ProductSupplierGetSuppliersDTO
+
         List<ProductSupplierGetSuppliersDTO> suppliers = new ArrayList<>();
-        // Loop through each ProductSupplier and convert to DTO
+
         for (ProductSupplier ps : productSuppliers) {
             suppliers.add(productSupplierMapper.toGetSuppliersDTO(ps));
         }
-        // Return the list of suppliers
+
         return suppliers;
     }
 
@@ -114,7 +114,7 @@ public class ProductSupplierService {
      * throws SecurityException if the employee is not authorized
      */
     public ProductSupplierDTO createProductForSupplier(Integer suppliernr, Integer productnr, Integer employeenr ) {
-        // Get employee with Optional
+
         Optional<Employee> employeeOpt = employeeRepository.findById(employeenr);
         if (employeeOpt.isEmpty()) {
             throw new IllegalArgumentException("Employee not found");
@@ -125,7 +125,7 @@ public class ProductSupplierService {
             throw new SecurityException("You are not authorized to delete suppliers");
         }
 
-        // Check if product and supplier exists
+
         Product product = productRepository.findById(productnr)
                 .orElseThrow(() -> new IllegalArgumentException("Product not found"));
 
@@ -161,7 +161,7 @@ public class ProductSupplierService {
      * throws SecurityException if the employee is not authorized
      */
     public Optional<ProductSupplierDTO> deleteProductBySupplierById(Integer suppliernr, Integer productnr, Integer employeenr) {
-        // Get employee with Optional
+
         Optional<Employee> employeeOpt = employeeRepository.findById(employeenr);
         if (employeeOpt.isEmpty()) {
             throw new IllegalArgumentException("Employee not found");
@@ -177,10 +177,10 @@ public class ProductSupplierService {
             return Optional.empty();
         }
         ProductSupplier productSupplier = optionalProductSupplier.get();
-        // Delete product by supplier
+
         productSupplierRepository.delete(productSupplier);
 
-        // Convert to DTO  and return
+
         ProductSupplierDTO deletedProductDTO = convertToDTO(productSupplier);
         return Optional.of(deletedProductDTO);
     }

@@ -1,7 +1,6 @@
 package com.group3.inventhor.dto;
 
 import lombok.Data;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 /**
