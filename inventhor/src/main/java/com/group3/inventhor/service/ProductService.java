@@ -6,7 +6,6 @@ import com.group3.inventhor.dto.ProductCreateDTO;
 import com.group3.inventhor.dto.ProductDTO;
 import com.group3.inventhor.mapper.ProductMapper;
 import com.group3.inventhor.model.Product;
-import com.group3.inventhor.model.ProductSupplier;
 import com.group3.inventhor.repository.CategoryRepository;
 import com.group3.inventhor.repository.LocationProductRepository;
 import com.group3.inventhor.repository.ProductRepository;

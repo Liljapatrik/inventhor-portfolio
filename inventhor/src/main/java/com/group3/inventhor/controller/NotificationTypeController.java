@@ -34,7 +34,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class NotificationTypeController {
 
-    // The NotificationTypeService instance used to handle notification type-related operations
+
     private final NotificationTypeService notificationTypeService;
 
     /**
@@ -49,7 +49,7 @@ public class NotificationTypeController {
     @Operation(summary = "Get all notification types", description = "Retrieves all notification types from the service layer")
     @GetMapping
     public ResponseEntity<List<NotificationTypeDTO>> getAllNotificationTypes() {
-        // Call the service to get all notification types and return them as a ResponseEntity
+
         List<NotificationTypeDTO> notificationTypes = notificationTypeService.getAllNotificationTypes();
         return ResponseEntity.ok(notificationTypes);
     }

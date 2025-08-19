@@ -32,7 +32,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductController {
 
-    // The ProductService instance used to handle product-related operations
+
     private final ProductService productService;
 
     /**

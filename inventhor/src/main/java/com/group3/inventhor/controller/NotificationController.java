@@ -31,7 +31,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class NotificationController {
 
-    // The NotificationService instance used to handle notification-related operations
+
     private final NotificationService notificationService;
 
     /**

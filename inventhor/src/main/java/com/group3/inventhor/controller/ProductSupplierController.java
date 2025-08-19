@@ -112,10 +112,6 @@ public class ProductSupplierController {
         }
     }
 
-
-
-
-
     /**
      * DELETE specific product from a supplier
      * DeleteMapping to handle HTTP DELETE request for a specific product tied to a supplier

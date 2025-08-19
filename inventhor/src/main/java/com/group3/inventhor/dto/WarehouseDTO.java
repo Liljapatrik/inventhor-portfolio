@@ -1,7 +1,6 @@
 package com.group3.inventhor.dto;
 
 
-import com.group3.inventhor.model.Address;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;

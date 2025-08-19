@@ -15,7 +15,7 @@ import lombok.Setter;
  * @Table annotation specifies the name of the table in the database that this class is associated with.
  *
  */
-@Entity // means there will be a table in the database called employee where all the employee details are stored.
+@Entity
 @Getter
 @Setter
 @Table(name = "customer", schema = "inventhor") //specify the name of the table
