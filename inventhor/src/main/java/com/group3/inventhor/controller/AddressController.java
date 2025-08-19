@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name="Address Controller", description = "API for managing addresses")
 @RequiredArgsConstructor
 public class AddressController {
-    // The AddressService instance used to handle address-related operations
+
     private final AddressService addressService;
 
     /**

@@ -20,11 +20,10 @@ import lombok.Setter;
 @Setter
 @Table(name = "address", schema = "inventhor")
 public class Address {
-    // Unique identifier for the address, automatically generated
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer addressnr;
-    //country, city, street, and postcode fields represent the components of the address
     private String country;
     private String city;
     private String street;

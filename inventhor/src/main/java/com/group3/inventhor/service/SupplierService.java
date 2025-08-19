@@ -75,7 +75,7 @@ public class SupplierService {
         return supplierDTOsList;
     }
 
-    // Konverterar enstaka objekt
+
     private SupplierDTO convertToDTO(Supplier supplier) {
         return supplierMapper.toDTO(supplier);
     }
@@ -89,7 +89,7 @@ public class SupplierService {
      * Converting the saved supplier entity back to a DTO and return it.
      */
     public SupplierDTO save(SupplierDTO supplierDTO, Integer employeenr) {
-        // Hämta employee med Optional, kasta exception om ej finns
+
         Optional<Employee> employeeOpt = employeeRepository.findById(employeenr);
         if (employeeOpt.isEmpty()) {
             throw new IllegalArgumentException("Employee not found");
@@ -102,22 +102,22 @@ public class SupplierService {
             throw new SecurityException("You are not authorized to delete suppliers");
         }
 
-        // Checks if email already exists
+
         if (emailExists(supplierDTO.getEmail())) {
             throw new IllegalArgumentException("Email already exists");
         }
 
-        // Checks is number already exists
+
         if (phoneNumberExists(supplierDTO.getPhone())) {
             throw new IllegalArgumentException("A supplier with this phone number already exists");
         }
 
-        // Checks if website already exists
+
         if (websiteExists(supplierDTO.getWebsite())) {
             throw new IllegalArgumentException("A supplier with this website already exists");
         }
 
-        // Try to find existing address
+
         Optional<Address> existingAddress = addressRepository.findByCountryAndCityAndStreetAndPostcode(
                 supplierDTO.getAddress().getStreet(),
                 supplierDTO.getAddress().getPostcode(),
@@ -126,30 +126,30 @@ public class SupplierService {
         );
 
         Address address = existingAddress.orElseGet(() -> {
-            // Create new address
+
             Address newAddress = new Address();
             newAddress.setStreet(supplierDTO.getAddress().getStreet());
             newAddress.setPostcode(supplierDTO.getAddress().getPostcode());
             newAddress.setCity(supplierDTO.getAddress().getCity());
             newAddress.setCountry(supplierDTO.getAddress().getCountry());
-            // Save address (will create a new address if it's not already exists)
+
             return addressRepository.save(newAddress);
         });
 
-        // Creating supplier connected to address
+
         Supplier supplier = new Supplier();
         supplier.setName(supplierDTO.getName());
         supplier.setContactperson(supplierDTO.getContact());
         supplier.setEmail(supplierDTO.getEmail());
         supplier.setPhone(supplierDTO.getPhone());
         supplier.setWebsite(supplierDTO.getWebsite());
-        supplier.setAddress(address);  // Connecting the existing address or the new one
+        supplier.setAddress(address);
         supplier.setNotes(supplierDTO.getNotes());
 
-        // Saving Supplier to the database
+
         Supplier savedSupplier = supplierRepository.save(supplier);
 
-        // Return DTO
+
         return supplierMapper.toDTO(savedSupplier);
     }
 

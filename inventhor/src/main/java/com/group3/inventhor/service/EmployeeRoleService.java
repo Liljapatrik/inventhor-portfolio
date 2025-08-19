@@ -4,7 +4,6 @@ import com.group3.inventhor.dto.EmployeeRoleDTO;
 import com.group3.inventhor.mapper.EmployeeRoleMapper;
 import com.group3.inventhor.model.EmployeeRole;
 import com.group3.inventhor.repository.EmployeeRoleRepository;
-import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

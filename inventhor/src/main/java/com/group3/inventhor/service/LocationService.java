@@ -2,7 +2,6 @@ package com.group3.inventhor.service;
 
 
 import com.group3.inventhor.dto.LocationDTO;
-import com.group3.inventhor.dto.WarehouseDTO;
 import com.group3.inventhor.mapper.LocationMapper;
 import com.group3.inventhor.model.Location;
 import com.group3.inventhor.model.LocationId;

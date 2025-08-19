@@ -5,7 +5,6 @@ import com.group3.inventhor.mapper.CustomerOrderMapper;
 import com.group3.inventhor.model.*;
 import com.group3.inventhor.repository.*;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

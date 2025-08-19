@@ -20,11 +20,9 @@ import lombok.Data;
 @Table(name = "category", schema = "inventhor")
 public class Category {
 
-    // Unique identifier for the category, automatically generated
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer categorynr;
-
-    // Name of the category
     private String name;
 }

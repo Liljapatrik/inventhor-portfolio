@@ -1,7 +1,5 @@
 package com.group3.inventhor.dto;
 
-import com.group3.inventhor.model.Product;
-import com.group3.inventhor.model.Warehouse;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

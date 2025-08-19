@@ -2,7 +2,6 @@ package com.group3.inventhor.repository;
 
 import com.group3.inventhor.model.Location;
 import com.group3.inventhor.model.LocationId;
-import com.group3.inventhor.model.LocationProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

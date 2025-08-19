@@ -32,7 +32,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class EmployeeRoleController {
 
-    // The EmployeeRoleService instance used to handle employee role-related operations
+
     private final EmployeeRoleService employeeRoleService;
 
     /**

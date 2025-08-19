@@ -20,6 +20,5 @@ public class EmployeeRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer rolenr;
-
     private String name; // we have two roles "admin" and "staff" which are used to determine the privileges of the employee in the system
 }
