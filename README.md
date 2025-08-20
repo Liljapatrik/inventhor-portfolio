@@ -1,113 +1,94 @@
-# APP2000-Group3-Backend
+# Inventhor application 
 
-A Spring Boot application developed for IMS Inventhor, designed to handle products, warehouses, suppliers, customers, users, and addresses. It includes a RESTful API with Swagger OpenAPI documentation.
+Inventhor is a full-stack application developed for IMS Inventhor, managing products, warehouses, orders, suppliers, customers, users, and addresses.  
+The backend is built in Java with Spring Boot and exposes a RESTful API with Swagger documentation.  
+The frontend is developed in React with JavaScript, providing an interactive user experience.
 
-## Features (UNDER DEVELOPMENT!)
+> This project was developed in a team, with each member contributing to both frontend and backend functionality. In this portfolio, the focus is on my personal contributions.
 
-- Employee management and registration
-- Customers management and registration
+## Architecture
+
+- **Frontend:** React (JavaScript)
+- **Backend:** Java + Spring Boot
+- **Database:** PostgreSQL
+- **API Documentation:** Swagger (OpenAPI)
 
 ## Tech Stack
 
-- Java
-- Spring Boot
-- PostgreSQL
-- OpenAPI (Swagger) for documentation
-- MapStruct for object mapping
-- Lombok to minimize boilerplate code, enhancing readability and maintainability.
+- **Frontend:** React, JavaScript, HTML, CSS
+- **Backend:** Java, Spring Boot, MapStruct, Lombok
+- **Database:** PostgreSQL
+- **Build & Tools:** Maven, npm
+- **Other:** Swagger (OpenAPI), Postman, Git, GitHub
 
-# Get started
+## Get started
+
+Follow these steps to run the application locally:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Mifagen/APP2000-Group3-Backend.git
-cd APP2000-Group3-Backend/inventhor
+git clone https://github.com/Liljapatrik/inventhor-portfolio.git
+
 ```
 
-2. Create PostgreSQL database:
-```sql
-CREATE DATABASE inventhor;
+### Backend
+1. Create PostgreSQL database:
+    ```sql
+    CREATE DATABASE inventhor;
+    ```
+2. Configure database connection in `src/main/resources/application.properties`:
+  ```properties
+  spring.datasource.url=jdbc:postgresql://localhost:5432/inventhor
+  spring.datasource.username=your_username
+  spring.datasource.password=your_password
+  ```
+3. Navigate to the backend folder:
+```bash
+  cd inventhor-backend
 ```
-
-3. Configure database connection in `src/main/resources/application.properties`:
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/inventhor
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-```
-
 4. Build the project:
 ```bash
-mvn clean install
+  mvn clean install
 ```
 
-5. Run the application:
+5. Run the Spring Boot application:
 ```bash
 mvn spring-boot:run
 ```
 
-The application will be available at `http://localhost:8080`
-
-## API Documentation
-
-Access the Swagger UI to explore and test the API:
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-
-## Project Structure
-
-```
-src/main/java/com/group3/inventhor
-├── config/          # Configuration classes
-├── controller/      # REST controllers
-├── model/          # Entity classes
-├── repository/     # Data access layer
-├── service/        # Business logic
-├── dto/            # Data Transfer Objects
-├── mapper/         # Object mappers
-└── exception/      # Exception handling
-```
-
-## Key Features Explained (UNDER DEVELOPMENT!)
-
-### Employee management
-- Create and update information about employee
-- Managing accecibility for different users
-- Getting all information about user
-
-### Customer management
-- Create and update information about customers
+6. The backend will start on [http://localhost:8080](http://localhost:8080), and you can access Swagger documentation at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
 
+### Frontend
 
-
-## API Examples
-
-### Create a new address
-
+1. Navigate to the frontend folder:
 ```bash
-POST /address
-{
-  "street": "Karl Johan 23",
-  "postCode": 1995,
-  "city": "Oslo",
-  "country": "Norway"
-}
+  cd inventhor-frontend
 ```
 
-### Create a new employee and asign address to him
-
+2. Install dependencies:
 ```bash
-{
-  "email": "bruno@gmail.com",
-  "password": "bruno123",
-  "firstName": "Mike",
-  "lastName": "Bruno",
-  "role": "Administrator",
-  "position": "It developer",
-  "employedDate": "2020-11-22",
-  "address": {
-    "addressID": 23
-  },
-  "active": true
-}
+npm install
 ```
+
+3. Start the React application:
+```bash
+npm start
+```
+
+4. The frontend will start on [http://localhost:3000](http://localhost:3000).
+
+## Contributions
+
+I contributed to all parts of the project:
+- **Frontend:** Developed react components and views for managing warehouses and suppliers.
+- **Backend:** Implemented RESTful API endpoints, service layer logic, and entity mappings in Spring Boot.
+- **Database:** Designed and set up PostgreSQL schema, wrote queries, and handled data relationships.
+
+## More Information
+
+For more detailed instructions, see the README files in the `inventhor-frontend/` and `inventhor-backend/` folders. 
+
+
+
+
