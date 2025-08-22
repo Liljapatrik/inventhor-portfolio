@@ -28,4 +28,7 @@ public class Address {
     private String city;
     private String street;
     private String postcode;
+
+    @OneToOne(mappedBy = "address")
+    private Employee employee;
 }
