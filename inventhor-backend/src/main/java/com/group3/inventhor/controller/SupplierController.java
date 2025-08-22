@@ -171,7 +171,7 @@ public class SupplierController {
         } catch (SecurityException securityException) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body(securityException.getMessage());
 
-        } catch (IllegalArgumentException exception) {
+        } catch (IllegalArgumentException | IllegalStateException exception) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
 
         } catch (Exception e) {
