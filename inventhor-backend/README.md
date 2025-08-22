@@ -111,20 +111,20 @@ Once the application is running, you can explore the API via Swagger UI:
 ## API Examples
 
 ### Get all suppliers
-![Get all suppliers example](images\getAllSuppliers.png)
+![Get all suppliers example](images/getAllSuppliers.png)
 
 ### Delete supplier with products connected 
-![Delete supplier by id](images\DeleteSupplier.png)
+![Delete supplier by id](images/DeleteSupplier.png)
 
 ### Delete supplier with no products connected
-![Delete supplier by id](images\deleteSupplier2.png)
+![Delete supplier by id](images/deleteSupplier2.png)
 
 ### Update supplier
 ![Update supplier by Id](images/PutSupplier.png)
-![Update supplier second view](images\PutSupplier2.png)
+![Update supplier second view](images/PutSupplier2.png)
 
 ### Create a new supplier
-![Create new supplier](images\createSupplier.png)
+![Create new supplier](images/createSupplier.png)
 
 ### Get warehouse order by id
 
