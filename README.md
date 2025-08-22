@@ -56,7 +56,7 @@ git clone https://github.com/Liljapatrik/inventhor-portfolio.git
 mvn spring-boot:run
 ```
 
-6. The backend will start on [http://localhost:8080](http://localhost:8080), and you can access Swagger documentation at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+6. The backend will start on [http://localhost:8080](http://localhost:8080), and you can access Swagger documentation at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
 
 
 ### Frontend
@@ -81,7 +81,7 @@ npm start
 ## Contributions
 
 I contributed to all parts of the project:
-- **Frontend:** Developed react components and views for managing warehouses and suppliers.
+- **Frontend:** Developed react components and views for managing warehouses, suppliers and products.
 - **Backend:** Implemented RESTful API endpoints, service layer logic, and entity mappings in Spring Boot.
 - **Database:** Designed and set up PostgreSQL schema, wrote queries, and handled data relationships.
 
