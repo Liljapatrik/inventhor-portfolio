@@ -34,8 +34,6 @@ public class SupplierDTO {
     @NotNull(message = "notes is required")
     private String notes;
 
-
-
     private AddressDTO address;
-    private EmployeeDTO employee;
+
 }
