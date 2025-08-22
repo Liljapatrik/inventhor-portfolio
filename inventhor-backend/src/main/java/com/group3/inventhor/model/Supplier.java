@@ -29,4 +29,6 @@ public class Supplier {
     @JoinColumn(name = "addressnr")
     private Address address;
 
+
+
 }
