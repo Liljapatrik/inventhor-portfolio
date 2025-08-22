@@ -35,4 +35,5 @@ public class Product {
     private BigDecimal weight;
     private BigDecimal sellprice;
     private String unit; // Unit of measurement for the product (e.g., kg, pcs, etc.)
+
 }

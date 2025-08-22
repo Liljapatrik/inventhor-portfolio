@@ -9,6 +9,7 @@ import com.group3.inventhor.model.Employee;
 import com.group3.inventhor.repository.AddressRepository;
 import com.group3.inventhor.repository.SupplierRepository;
 import com.group3.inventhor.repository.EmployeeRepository;
+import com.group3.inventhor.repository.ProductSupplierRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -31,6 +32,7 @@ public class SupplierService {
     private final SupplierMapper supplierMapper;
     private final AddressRepository addressRepository;
     private final EmployeeRepository employeeRepository;
+    private final ProductSupplierRepository productSupplierRepository;
 
     /**
      * Retrieves a supplier by its ID.
@@ -283,9 +285,11 @@ public class SupplierService {
         }
         Supplier supplier = optionalSupplier.get();
 
+        if (productSupplierRepository.existsBySupplier_Suppliernr(suppliernr)) {
+            throw new IllegalStateException("Cannot delete supplier because products are linked.");
+        }
 
         supplierRepository.delete(supplier);
-
         SupplierDTO deletedSupplierDTO = convertToDTO(supplier);
         return Optional.of(deletedSupplierDTO);
     }

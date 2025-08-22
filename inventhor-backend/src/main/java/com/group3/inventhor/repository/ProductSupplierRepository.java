@@ -30,4 +30,6 @@ public interface ProductSupplierRepository extends JpaRepository<ProductSupplier
     Optional<ProductSupplier> findBySupplier_SuppliernrAndProduct_Productnr(Integer suppliernr, Integer productnr);
 
     boolean existsByProduct_ProductnrAndSupplier_Suppliernr(Integer productnr, Integer suppliernr);
+
+    boolean existsBySupplier_Suppliernr(Integer suppliernr);
 }
