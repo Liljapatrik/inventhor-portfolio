@@ -114,30 +114,7 @@ Once the application is running, you can explore the API via Swagger UI:
 
 ### Create a new address
 
-```bash
-POST /address
-{
-  "street": "Karl Johan 23",
-  "postCode": 1995,
-  "city": "Oslo",
-  "country": "Norway"
-}
-```
+
 
 ### Create a new employee and asign address to him
 
-```bash
-{
-  "email": "bruno@gmail.com",
-  "password": "bruno123",
-  "firstName": "Mike",
-  "lastName": "Bruno",
-  "role": "Administrator",
-  "position": "It developer",
-  "employedDate": "2020-11-22",
-  "address": {
-    "addressID": 23
-  },
-  "active": true
-}
-```
