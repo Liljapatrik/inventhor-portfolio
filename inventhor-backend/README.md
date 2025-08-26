@@ -1,6 +1,6 @@
 # Inventhor Backend
 
-The backend of **Inventhor** is built with **Java + Spring Boot** and provides a RESTful API for managing products, orders, warehouses, customers, suppliers, users, and addresses.  
+The backend of **Inventhor** is built with **Java + Spring Boot** and provides a RESTful API for managing products, orders, warehouses, customers, suppliers, users, notifications, and addresses.  
 API documentation is available via **Swagger (OpenAPI)**.
 
 ## Tech Stack
@@ -126,5 +126,14 @@ Once the application is running, you can explore the API via Swagger UI:
 ### Create a new supplier
 ![Create new supplier](images/createSupplier.png)
 
-### Get warehouse order by id
+### Get all warehouseorders
+![Get all warehouseorders](images/warehouseOrderGet.png)
 
+### Create a warehouseorder
+![Create a warehouseorder](images/warehouseOrderCreate.png)
+
+### Edit a warehouseorder
+![Edit a warehouseorder](images/warehouseOrderPut.png)
+
+### Delete a warehouseorder
+![Delete a warehouseorder](images/warehouseOrderDelete.png)
