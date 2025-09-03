@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*------------------------------------------------------------------------------------------
+    Basic style
+------------------------------------------------------------------------------------------*/
+:root {
+    scroll-behavior: smooth;
+    --basic-color: #000000;
+    --second-color: #FFFFFF;
+    --highlight-color: #F5BE05;
+    --stroke-color: #D9D9D9;
+    --background-color: #FFFFFF;
+    --navbar-color: #FFFFFF;
+    --navbar-background-color: #FFFFFF;
+    --logo-icon-color: #000000;
+    --select-item-color: #E8E8E8; 
+    --dropdown-bg-color:#F8F8F8;
+    --chart-subline-color: #C0C0C0;
+    --chart-title-color: #484848;
+    --unread-color: #E8E8E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--basic-color);
+    background: var(--background-color);
+}
+
+a {
+    color: var(--basic-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--basic-color);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.darkmode {
+    scroll-behavior: smooth;
+    --basic-color: #FFFFFF;
+    --second-color: #000000;
+    --highlight-color: #F5BE05;
+    --stroke-color: #D9D9D9;
+    --background-color: #1E1E1E;
+    --navbar-color: #232222;
+    --navbar-background-color: #232222;
+    --logo-icon-color: #FFFFFF;
+    --select-item-color: #808080; 
+    --dropdown-bg-color:#484848;
+    --chart-title-color: #D9D9D9;
+    --chart-subline-color: #D9D9D9;
+    --unread-color: #808080;
+}
+
+.modal-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding-top: 15rem;
+
+}

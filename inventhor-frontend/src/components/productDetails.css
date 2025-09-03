@@ -1,0 +1,67 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 1 February 2025
+Description: Styling product details page
+*/
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/*Styling a general info about product*/
+
+.product-details .general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.product-details .general-info h1 {
+    font-weight: bold;
+}
+
+.product-details .general-info i {
+    color: var(--basic-color);
+    font-size: 6rem;
+    align-items: center;
+}
+
+.product-details h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Styling price section*/
+.product-details .price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture img {
+    width: 10rem;
+}
+
+
+/*Make page responsive*/
+
+@media  (max-width: 1024px) {
+    .product-details {
+        gap : 2rem;
+    }
+    
+    .product-details .general-info i {
+        font-size: 3rem;
+    }
+}
+

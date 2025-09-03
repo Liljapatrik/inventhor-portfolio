@@ -1,0 +1,11 @@
+/*
+Author: Furo Muktar Eshetu
+Date: 10 March 2025
+Description: Styles for the support section of the application.
+*/
+
+.support {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

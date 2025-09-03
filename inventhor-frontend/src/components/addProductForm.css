@@ -1,0 +1,58 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 5 March 2025
+Description: CSS styles for the Add Product Form component.
+*/
+
+
+
+/* Dropdown style */
+.supplierCss {
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid var(--basic-color);
+    background-color: var(--dropdown-bg-color);
+    color: var(--basic-color);
+    border-radius: 4px;
+    width: 250px;  /* Anpassad bredd */
+    height: 35px;  /* Anpassad höjd */
+    cursor: pointer;
+}
+
+
+/* När dropdown öppnas */
+.supplierCss:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+/* Dropdown-alternativ */
+.supplierCss option {
+    background-color: var(--dropdown-bg-color);
+    color: var(--basic-color);
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4); /* semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: var(--background-color);
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.18);
+    min-width: 10rem;
+    max-width: 90vw;
+    min-height: 10rem;
+    text-align: center;
+}

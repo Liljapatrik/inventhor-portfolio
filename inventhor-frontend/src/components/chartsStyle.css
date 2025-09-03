@@ -1,0 +1,38 @@
+/*
+Author: Tatiana Fløisbonn 
+Date: 1 February 2025
+Description: CSS styles for the charts component in Product Details
+*/
+
+.chart {
+    border: 0.1rem solid var(--basic-color);
+    padding: 1.5rem 1rem 2rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 655px) {
+   
+    .chart {
+        width: 45rem;
+    }
+
+    ResponsiveContainer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .charts-holder {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .chart-info {
+        width: 50%;
+    }
+
+}

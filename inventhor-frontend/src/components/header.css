@@ -1,0 +1,40 @@
+/*
+Author: Tatiana Fløisbonn
+Date: 1 February 2025
+Description: CSS for the header component, including styles for the header, toggle sidebar button, and header navigation.
+*/
+
+/*--------------------------------------
+    Header style
+----------------------------------------*/
+
+.header {
+    z-index: 997; /*define order of overlays of elements */
+    height: 4.5rem;
+    border-bottom: 0.1rem solid var(--stroke-color);
+    background-color: var(--navbar-background-color);
+}
+
+/* Toggle Sidebar btn */
+.header .toggle-sidebar-btn {
+    font-size: 2rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    color: var(--basic-color);
+    padding-left: 2rem;
+    visibility: hidden;
+    
+}
+
+@media (max-width: 1024px) {
+    .header .toggle-sidebar-btn {
+        font-size: 1.8rem;
+        padding-right: 1rem;
+        cursor: pointer;
+        color: var(--basic-color);
+        padding-left: 0.5rem;
+        visibility: visible;
+
+    }
+}
+
