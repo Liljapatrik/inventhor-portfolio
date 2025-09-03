@@ -1,4 +1,5 @@
 # Inventhor application 
+<<<<<<< HEAD
 Inventhor is a full-stack application developed for IMS Inventhor, managing products, warehouses, orders, suppliers, customers, users, notifications, and addresses. The backend is built in Java with Spring Boot and exposes a RESTful API with Swagger documentation. The frontend is developed in React with JavaScript, providing an interactive user experience. Keycloak is integrated for centralized authentication and authorization, enabling secure login and role-based access control across the application.
 
 This project was developed in a team, with each member contributing to both frontend and backend functionality. In this portfolio, the focus is on my personal contributions.
@@ -34,6 +35,32 @@ Before running the Inventhor application locally, make sure you have the followi
 **Note:** Keycloak must be running and configured with the appropriate realms, roles, and test users to fully test authentication and authorization in the application. For more detailed instructions on setting up Keycloak and logging in, see the inventhor-frontend/README.md.
 
 ## Get started
+=======
+
+Inventhor is a full-stack application developed for IMS Inventhor, managing products, warehouses, orders, suppliers, customers, users, and addresses.  
+The backend is built in Java with Spring Boot and exposes a RESTful API with Swagger documentation.  
+The frontend is developed in React with JavaScript, providing an interactive user experience.
+
+> This project was developed in a team, with each member contributing to both frontend and backend functionality. In this portfolio, the focus is on my personal contributions.
+
+## Architecture
+
+- **Frontend:** React (JavaScript)
+- **Backend:** Java + Spring Boot
+- **Database:** PostgreSQL
+- **API Documentation:** Swagger (OpenAPI)
+
+## Tech Stack
+
+- **Frontend:** React, JavaScript, HTML, CSS
+- **Backend:** Java, Spring Boot, MapStruct, Lombok
+- **Database:** PostgreSQL
+- **Build & Tools:** Maven, npm
+- **Other:** Swagger (OpenAPI), Postman, Git, GitHub
+
+## Get started
+
+>>>>>>> origin/main
 Follow these steps to run the application locally:
 
 1. Clone the repository:
@@ -71,6 +98,10 @@ mvn spring-boot:run
 
 
 ### Frontend
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 1. Navigate to the frontend folder:
 ```bash
   cd inventhor-frontend
@@ -89,12 +120,17 @@ npm start
 4. The frontend will start on [http://localhost:3000](http://localhost:3000).
 
 ## Contributions
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 I contributed to all parts of the project:
 - **Frontend:** Developed react components and views for managing warehouses, suppliers and products.
 - **Backend:** Implemented RESTful API endpoints, service layer logic, and entity mappings in Spring Boot.
 - **Database:** Designed and set up PostgreSQL schema, wrote queries, and handled data relationships.
 
 ## More Information
+<<<<<<< HEAD
 For more detailed instructions, see the README files in the `inventhor-frontend/` and `inventhor-backend/` folders. 
 
 ## Future Improvements 
@@ -106,6 +142,11 @@ While the application is functional, there are areas planned for further develop
 
 These improvements are part of the roadmap and will help ensure the system becomes more robust, user-friendly, and scalable.
 
+=======
+
+For more detailed instructions, see the README files in the `inventhor-frontend/` and `inventhor-backend/` folders. 
+
+>>>>>>> origin/main
 
 
 

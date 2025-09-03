@@ -45,8 +45,10 @@ build/
 /.pnp
 .pnp.js
 
+
 # cache
 /inventhor-frontend/.cache
+
 
 # testing
 /coverage
