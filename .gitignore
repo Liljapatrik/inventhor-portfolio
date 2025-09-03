@@ -42,13 +42,10 @@ build/
 
 # dependencies
 /node_modules
+inventhor-frontend/node_modules/
+inventhor-frontend/.cache/
 /.pnp
 .pnp.js
-
-
-# cache
-/inventhor-frontend/.cache
-
 
 # testing
 /coverage
