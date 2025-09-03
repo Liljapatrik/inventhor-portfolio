@@ -1,5 +1,5 @@
 # Inventhor application 
-<<<<<<< HEAD
+
 Inventhor is a full-stack application developed for IMS Inventhor, managing products, warehouses, orders, suppliers, customers, users, notifications, and addresses. The backend is built in Java with Spring Boot and exposes a RESTful API with Swagger documentation. The frontend is developed in React with JavaScript, providing an interactive user experience. Keycloak is integrated for centralized authentication and authorization, enabling secure login and role-based access control across the application.
 
 This project was developed in a team, with each member contributing to both frontend and backend functionality. In this portfolio, the focus is on my personal contributions.
@@ -34,33 +34,11 @@ Before running the Inventhor application locally, make sure you have the followi
 
 **Note:** Keycloak must be running and configured with the appropriate realms, roles, and test users to fully test authentication and authorization in the application. For more detailed instructions on setting up Keycloak and logging in, see the inventhor-frontend/README.md.
 
-## Get started
-=======
 
-Inventhor is a full-stack application developed for IMS Inventhor, managing products, warehouses, orders, suppliers, customers, users, and addresses.  
-The backend is built in Java with Spring Boot and exposes a RESTful API with Swagger documentation.  
-The frontend is developed in React with JavaScript, providing an interactive user experience.
-
-> This project was developed in a team, with each member contributing to both frontend and backend functionality. In this portfolio, the focus is on my personal contributions.
-
-## Architecture
-
-- **Frontend:** React (JavaScript)
-- **Backend:** Java + Spring Boot
-- **Database:** PostgreSQL
-- **API Documentation:** Swagger (OpenAPI)
-
-## Tech Stack
-
-- **Frontend:** React, JavaScript, HTML, CSS
-- **Backend:** Java, Spring Boot, MapStruct, Lombok
-- **Database:** PostgreSQL
-- **Build & Tools:** Maven, npm
-- **Other:** Swagger (OpenAPI), Postman, Git, GitHub
 
 ## Get started
 
->>>>>>> origin/main
+
 Follow these steps to run the application locally:
 
 1. Clone the repository:
