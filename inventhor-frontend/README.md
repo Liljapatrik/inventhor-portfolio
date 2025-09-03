@@ -32,8 +32,8 @@ npm start
 The application runs on [http://localhost:3000](http://localhost:3000)
 
 ## Screenshots 
-### Sign In Module 
-- This feature is in development. Screenshots of the Sign In module, demonstrating how users log in to the inventory application.
+### Sign In Module - This feature is in development. 
+Screenshots of the Sign In module, demonstrating how users log in to the inventory application.
 
 1. When you first start the application, you may encounter a **401 error**. This happens because the token runtime has expired. 
 2. To fix this, click **Sign Out** and try signing in again. 
