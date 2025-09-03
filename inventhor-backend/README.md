@@ -1,17 +1,14 @@
 # Inventhor Backend
+The backend of **Inventhor** is built with **Java + Spring Boot** and provides a RESTful API for managing products, orders, warehouses, customers, suppliers, users, notifications, and addresses. API documentation is available via **Swagger (OpenAPI)**.
 
-The backend of **Inventhor** is built with **Java + Spring Boot** and provides a RESTful API for managing products, orders, warehouses, customers, suppliers, users, notifications, and addresses.  
-API documentation is available via **Swagger (OpenAPI)**.
-
-## Tech Stack
-
-- **Backend:** Java, Spring Boot, MapStruct, Lombok  
-- **Database:** PostgreSQL  
-- **API Documentation:** Swagger (OpenAPI)  
-- **Build & Tools:** Maven  
+## Tech Stack 
+- **Backend:** Java, Spring Boot, MapStruct, Lombok 
+- **Database:** PostgreSQL 
+- **Authentication & Authorization:** Keycloak 
+- **API Documentation:** Swagger (OpenAPI) 
+- **Build & Tools:** Maven
 
 # Get started (Backend only)
-
 1. Create PostgreSQL database:
 ```sql
 CREATE DATABASE inventhor;
@@ -35,7 +32,6 @@ mvn spring-boot:run
 ```
 
 ## Project Structure
-
 ```
 src/main/java/com/group3/inventhor
 ├── config/          # Configuration classes
@@ -49,67 +45,64 @@ src/main/java/com/group3/inventhor
 ```
 
 ## API Documentation
-
 Once the application is running, you can explore the API via Swagger UI:
 
 - Swagger UI: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)  
 - OpenAPI spec (JSON): [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)  
 
 ## API Features
-
 ### Employee Management
-- Create, update and delete employee records
+- Create, update and delete employee records 
 - Assign roles and manage user access rights 
-- Retrieve detailed information about employees
+- Retrieve detailed information about employees 
 - Link employees to address
 
 ### Customer Management
-- Create, update and delete customer records
-- Retrieve detailed information about customers
+- Create, update and delete customer records 
+- Retrieve detailed information about customers 
 - Associate customers with orders and addresses
 
 ### Product Management
-- Create product records
-- Retrieve product details and list all products
-- Manage stock levels and availability
+- Create product records 
+- Retrieve product details and list all products 
+- Manage stock levels and availability 
 - Link products to suppliers and warehouses
 
-### Order Management for Customers and Warehouses
-- Create, update and delete orders
-- Retrieve order details and order history
-- Associate orders with customers and products
+### Customer and Warehouse Order Management
+- Create, update and delete orders 
+- Retrieve order details and order history 
+- Associate orders with customers and products 
 - Manage order status (e.g. picked, shipped, cancelled)
 
 ### Warehouse Management
-- Create, update and delete warehouse records
-- Retrieve warehouse details and list all warehouse
-- Manage product inventory within warehouse
+- Create, update and delete warehouse records 
+- Retrieve warehouse details and list all warehouses 
+- Manage product inventory within warehouse 
 - Link warehouse to addresses
 
 ### Supplier Management
-- Create, update and delete supplier records
-- Retrieve supplier details and list all supplier
+- Create, update and delete supplier records 
+- Retrieve supplier details and list all suppliers 
 - Associate suppliers with address and products
 
 ### Address Management 
-- Create, update and delete addresses
-- Retrieve address details
+- Create, update and delete addresses 
+- Retrieve address details 
 - Associate addresses with employees, customers, warehouses and suppliers
 
-### Notification Management
-- Create, update and delete notifications
-- Mark notifications as read or unread
-- Retrieve notifications for a specific user
+### Notification Management 
+- Create, update and delete notifications 
+- Mark notifications as read or unread 
+- Retrieve notifications for a specific user 
 - Manage different notification types (e.g. warnings, updates and reminders)
 
 ### User Management
-- Register and authenticate users
-- Manage roles and permissions
-- Retrieve user profile information
-- Handle account activation and deactivation 
+- Register and authenticate users 
+- Manage roles and permissions 
+- Retrieve user profile information 
+- Handle account activation and deactivation
 
 ## API Examples
-
 ### Get all suppliers
 ![Get all suppliers example](images/getAllSuppliers.png)
 
@@ -137,3 +130,13 @@ Once the application is running, you can explore the API via Swagger UI:
 
 ### Delete a warehouseorder
 ![Delete a warehouseorder](images/warehouseOrderDelete.png)
+
+## Future Improvements 
+- Improved exception handling with standardized error responses 
+- More fine-grained role-based access with Keycloak integration 
+- Unit and integration tests for higher coverage
+
+## Summary 
+The backend provides a robust RESTful API that powers the Inventhor system. It covers the business areas products, warehouses, orders, suppliers, customers, employees, and notifications with secure role-based access and structured data management. 
+
+My main contributions were implementing business logic, building REST endpoints, integrating PostgreSQL with JPA, and setting up DTO/mapper layers for clean architecture.
